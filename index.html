@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vice Clips</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap">
+<style>
+  /* Layout: one narrow reading column; a neon wordmark band on top, then Home / Terms / Privacy as hash views. */
+  :root {
+    --bg: #16171C; --panel: #1F2026; --line: #34363F; --fg: #EDEDF1; --muted: #A4A6B0;
+    --pink: #FF2E97; --purple: #8B3DFF;
+    --display: Anton, Impact, "Arial Narrow", sans-serif; --body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); }
+  .wrap { max-width: 720px; margin: 0 auto; padding-block: 32px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .brand { font-family: var(--display); font-size: clamp(44px, 10vw, 72px); line-height: 1; letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--pink), var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .handle { color: var(--muted); margin-top: 6px; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 28px; }
+  nav a { color: var(--fg); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-weight: 600; font-size: 14px; }
+  nav a[aria-current="page"] { border-color: var(--pink); background: rgba(255, 46, 151, .12); }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--pink); outline-offset: 2px; }
+  h1 { font-family: var(--display); font-weight: 400; font-size: 34px; letter-spacing: .5px; margin: 0 0 4px; text-wrap: balance; }
+  h2 { font-size: 17px; margin: 28px 0 6px; }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 18px; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 20px; }
+  a { color: var(--pink); }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-top: 20px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">VICE CLIPS</div>
+  <div class="handle">@GTA6ViceClipsVI · the best GTA 6 streamer moments, daily</div>
+  <nav><a href="index.html" aria-current="page">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+  <main>
+    <h1>GTA 6 clips, every day</h1>
+    <p>Vice Clips posts short highlights of GTA 6 livestreams and gameplay: the funniest, most chaotic and most cinematic moments from streamers, with full credit to every creator.</p>
+    <p>Find us as <b>@GTA6ViceClipsVI</b> on YouTube Shorts, TikTok and Instagram Reels.</p>
+    <div class="card">
+      <b>Vice Clips Publisher</b>
+      <p style="margin:6px 0 0">Vice Clips uses a small private tool, the Vice Clips Publisher, to upload its own finished clips to its own YouTube, TikTok and Instagram accounts. It runs on the channel owner's computer and is not offered to the public.</p>
+    </div>
+    <p class="updated" style="margin-top:20px">Vice Clips is a fan channel and is not affiliated with or endorsed by Rockstar Games, Take-Two Interactive, or any streamer shown.</p>
+  </main>
+  <footer>© 2026 Vice Clips. Not affiliated with Rockstar Games.</footer>
+</div>
+</body>
+</html>
